@@ -1,0 +1,20 @@
+#board{
+  padding: 30px 0;
+}
+.hide{
+  display: none;
+}
+#board .table-board td{
+  height: 80px;
+  width: 80px;
+  font-size: 25px;
+  font-weight: bolder;
+  padding-top: 20px;
+  cursor: initial;
+}
+#board .table-board td.free{
+  cursor: pointer;
+}
+#board .table-board tr, #board .table-board td {
+  border: solid 5px #000;
+}

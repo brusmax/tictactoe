@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sample Tic tac toe with HTML, CSS and Javascript">
+    <meta name="author" content="Brusmax">
+
+    <title>Sample Tic Tac Toe</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/cover/cover.css" rel="stylesheet">
+    <link href="./css/general.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Tic Tac Toe Sample</h3>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Play a game.</h1>
+        <h2 class="cover-heading">Player: <span class="badge badge-info player-name">Guess</span></h2>
+        <div id='board'>
+          <table class="table table-bordered table-dark table-board hide">
+            <tbody>
+              <tr class="line">
+                <td class="position a0 free" data-x='a' data-y='0'></td>
+                <td class="position b0 free" data-x='b' data-y='0'></td>
+                <td class="position c0 free" data-x='c' data-y='0'></td>
+              </tr>
+              <tr>
+                <td class="position a1 free" data-x='a' data-y='1'></td>
+                <td class="position b1 free" data-x='b' data-y='1'></td>
+                <td class="position c1 free" data-x='c' data-y='1'></td>
+              </tr>
+              <tr>
+                <td class="position a2 free" data-x='a' data-y='2'></td>
+                <td class="position b2 free" data-x='b' data-y='2'></td>
+                <td class="position c2 free" data-x='c' data-y='2'></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <img src='img/tactactoe.png' width=150 class="img-board">
+        </div>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary" id="start">Start</a>
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Sample made by <a href="https://brusmax.com" target="_blank">@Brusmax</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
