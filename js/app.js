@@ -1,4 +1,3 @@
-
 Player = {
   name: "Guess"
 }
@@ -28,7 +27,7 @@ class Game {
 
   askPlayerName() {
     this.reset();
-    this.player.name =  "hola";//prompt("Intro your player name:");
+    this.player.name =  prompt("Intro your player name:");
     $('.player-name').text(this.player.name);
   }
 
@@ -57,14 +56,12 @@ class Game {
     let x = element.data('x');
     let y = element.data('y');
     this.gameboard[x][y] = marker;
-    console.log(this.gameboard);
     this.validatePlay();
   }
 
   computerMove(){
     if( this.winner === true )
      return false;
-     console.log("computer turn...")
      let random_row = 0;
      let random_col = 0;
 
@@ -74,21 +71,12 @@ class Game {
       random_col = Math.floor(Math.random() * this.cols.length);
 
       // found an empty random space
-      if( this.gameboard[this.rows[random_row]][this.cols[random_col]].length === 0 ){
-        console.log("--->"+ this.rows[random_row] + "--> "+this.cols[random_col]);
-        console.log(":"+this.gameboard[this.rows[random_row]][random_col]);
+      if( this.gameboard[this.rows[random_row]][this.cols[random_col]].length === 0 )
         break;
-      }
      }
-     console.log(random_row);
-     console.log(random_col);
-
      this.turn += 1;
-     console.log('.'+this.rows[random_row]+this.cols[random_col]);
-     console.log(this.gameboard);
      $('.'+this.rows[random_row]+this.cols[random_col]).text(marker);
      this.gameboard[this.rows[random_row]][this.cols[random_col]] = marker;
-     console.log("next move... "+this.rows[random_row]+":"+this.cols[random_col]);
      this.validatePlay();
   }
 
@@ -141,7 +129,6 @@ class Game {
 
   drawWinnerBoard(aclass){
     aclass.forEach( (c) => {
-      console.log("===> "+c);
       $('.'+c).addClass('bg-success');
     });
   }
