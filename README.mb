@@ -5,6 +5,10 @@ This is a simple code sample for educational purposes, Tic Tac Toe game coded wi
 
 This sample is a project for a Javascript Tututorial for [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/tic-tac-toe)
 
+## Live Demo
+[Check this out!](https://brusmax.github.io/tictactoe/)
+![Demo](/img/tictactoe-livedemo.gif "Tic Tac Toe")
+
 ## Coded By
 [@Brusmax](https://brusmax.com)
 ## License
